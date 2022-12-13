@@ -5,7 +5,7 @@
     const [theme, { setTheme }] = useTheme();
 
     const handleTheme = () => {
-      theme() === 'light' ? setTheme('dark') : setTheme('light');
+      setTheme(theme => theme === 'light' ? 'dark' : 'light');
     }
 
     return (
